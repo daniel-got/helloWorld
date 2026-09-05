@@ -1,16 +1,8 @@
-This is a Kotlin Multiplatform project targeting Android, iOS.
+# Tugas 1 Praktikum
+## Daniel Calvin Simanjuntak
+## 123140004
 
-* [/iosApp](./iosApp/iosApp) contains an iOS application. Even if you’re sharing your UI with Compose Multiplatform, you
-  need this entry point for your iOS app. This is also where you should add SwiftUI code for your project.
-
-* [/shared](./shared/src) is for code that will be shared across your Compose Multiplatform applications. It contains
-  several subfolders:
-    - [commonMain](./shared/src/commonMain/kotlin) is for code that’s common for all targets.
-    - Other folders are for Kotlin code that will be compiled for only the platform indicated in the folder name. For
-      example, if you want to use Apple’s CoreCrypto for the iOS part of your Kotlin app,
-      the [iosMain](./shared/src/iosMain/kotlin) folder would be the right place for such calls. Similarly, if you want
-      to edit the Desktop (JVM) specific part, the [jvmMain](./shared/src/jvmMain/kotlin)
-      folder is the appropriate location.
+---
 
 ### Running the apps
 
@@ -28,5 +20,15 @@ Use the run button in your IDE's editor gutter, or run tests using Gradle tasks:
 - iOS tests: `./gradlew :shared:iosSimulatorArm64Test`
 
 ---
+### Screenshots
+#### Android
 
-Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html)…
+| 1. Home Screen | 2. First Opened | 3. Clicked |
+| :---: | :---: | :---: |
+| <img src="img_4.png" width="220" /> | <img src="img_5.png" width="220" /> | <img src="img_6.png" width="220" /> |
+
+#### iOS
+
+| 1. Home Screen | 2. First Opened | 3. Clicked |
+| :---: | :---: | :---: |
+| <img src="img_3.png" width="220" /> | <img src="img_2.png" width="220" /> | <img src="img.png" width="220" /> |
